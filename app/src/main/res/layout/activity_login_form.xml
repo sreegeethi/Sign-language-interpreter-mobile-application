@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Login_Form">
+
+<TextView
+    android:id="@+id/logintext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Hey,Login Now."
+    android:textSize="35dp"
+    android:layout_margin="50dp"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logintext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#abe1d3"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColorHint="@color/black" />
+
+<EditText
+    android:id="@+id/password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/username"
+    android:layout_margin="20dp"
+    android:background="#d6d6cf"
+    android:drawableLeft="@drawable/ic_baseline_info_24"
+    android:drawablePadding="20dp"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:padding="20dp"
+    android:textColorHint="@color/black" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/password"
+    android:id="@+id/laybutton"
+    android:layout_centerHorizontal="true">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#b12441"
+        android:text="Login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signinbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginbtn"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#b12441"
+        android:text="Sign In"
+        android:onClick="btn_signup"/>
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
