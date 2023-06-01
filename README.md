@@ -1,1 +1,1 @@
-# Sign-language-interpreter-mobile-application
+# IT351_Project
